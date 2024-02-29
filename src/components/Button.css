@@ -1,0 +1,10 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  border: none;
+  width: 18rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #d9d9d9;
+}

@@ -1,0 +1,88 @@
+/* @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  color: white;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.hero-title {
+  font-family: "League Gothic", sans-serif;
+  font-size: 5rem;
+  margin: 0 5rem 2px 5rem;
+  text-align: center;
+  line-height: 0.85;
+}
+.hero-subtitle {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 8px;
+  margin: 0 3rem 0 3rem;
+  text-align: center;
+}
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 0rem;
+}
+
+/* home */
+/* .home {
+  margin-top: 4rem;
+  padding: 2rem 3rem 3rem 3rem;
+  color: black;
+}
+.home__subtitle {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.home__about {
+  margin-top: 0;
+}
+
+
+
+.home__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+} */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem 3rem 3rem;
+}
+.header__logo {
+  width: 5rem;
+}
+.content {
+  background-color: white;
+}
+
+.footer__logo {
+  width: 3.5rem;
+}
