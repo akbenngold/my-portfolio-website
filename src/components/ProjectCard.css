@@ -1,0 +1,18 @@
+.description {
+  position: absolute;
+  color: white;
+  top: 1rem;
+  left: 1rem;
+}
+.project-card {
+  position: relative;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}

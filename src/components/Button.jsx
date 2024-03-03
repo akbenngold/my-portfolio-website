@@ -1,7 +1,12 @@
 import React from "react";
 import "./Button.css";
 function Button(props) {
-  return <Button>{props.label}</Button>;
+  return (
+    <button>
+      <img src={props.arrow} alt="" />
+      {props.label}
+    </button>
+  );
 }
 
 export default Button;
