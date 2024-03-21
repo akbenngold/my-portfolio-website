@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import "./Hero.css";
 
 function Hero(props) {
@@ -9,5 +9,10 @@ function Hero(props) {
     </div>
   );
 }
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
 
 export default Hero;

@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import footerLogo from "./assets/ojima-high-resolution-logo-white-transparent.png";
+import hammburger from "./assets/hamburger.svg";
 
 function App() {
   const route = (
@@ -18,10 +20,10 @@ function App() {
     <div className="header">
       <img
         className="header__logo"
-        src="src/assets/ojima-high-resolution-logo-white-transparent.png"
+        src={footerLogo}
         alt="logo"
       />
-      <img src="src/assets/hamburger.svg" alt="hamburger icon" />
+      <img src={hammburger} alt="hamburger icon" />
     </div>
   );
 
@@ -46,7 +48,7 @@ function App() {
       </div>
       <img
         className="footer__logo"
-        src="src/assets/ojima-high-resolution-logo-white-transparent.png"
+        src={footerLogo}
         alt="logo"
       />
     </div>

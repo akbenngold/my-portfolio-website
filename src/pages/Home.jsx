@@ -1,9 +1,10 @@
-import React from "react";
 import Hero from "../components/Hero";
+// import PropTypes from "prop-types";
 import "./Home.css";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
 
+// eslint-disable-next-line no-unused-vars
 function Home(props) {
   return (
     <>
@@ -67,5 +68,9 @@ function Home(props) {
     </>
   );
 }
+
+// Home.propTypes = {
+
+// };
 
 export default Home;
