@@ -1,0 +1,15 @@
+.home__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.home__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+
+  button {
+    width: 100%;
+  }
+}

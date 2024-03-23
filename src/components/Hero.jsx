@@ -1,12 +1,11 @@
 import PropTypes from "prop-types";
-import "./Hero.css";
 
 function Hero(props) {
   return (
-    <div className="hero">
-      <div className="hero__stitle">{props.title}</div>
-      <div className="hero__subtitle">{props.subtitle}</div>
-    </div>
+    <section className="hero">
+      <span className="hero__title">{props.title}</span>
+      <span className="hero__subtitle">{props.subtitle}</span>
+    </section>
   );
 }
 

@@ -1,0 +1,25 @@
+.hero {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 3rem;
+
+  &__title {
+    font-family: "League Gothic", sans-serif;
+    font-size: 11rem;
+    text-align: center;
+    line-height: 9rem;
+  }
+
+  &__subtitle {
+    font-family: "League Spartan", sans-serif;
+    font-size: 3.2rem;
+    letter-spacing: 1rem;
+    text-align: center;
+  }
+}

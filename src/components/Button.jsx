@@ -1,10 +1,10 @@
 import React from "react";
-import "./Button.css";
+// import "./Button.css";
 function Button(props) {
   return (
     <button>
-      <img src={props.arrow} alt="" />
-      {props.label}
+      <span className="button__label">{props.label}</span>
+      <span className="button__arrow">{props.arrow}</span>
     </button>
   );
 }
