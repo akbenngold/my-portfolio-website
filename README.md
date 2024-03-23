@@ -35,13 +35,13 @@ The root font size in the HTML has been set to `62.5%`, which means `1rem` is eq
 ## Usage
 
 1. Clone the repository:
-   git clone https://github.com/your-username/portfolio-website.git
+   `git clone https://github.com/your-username/portfolio-website.git`
 
 2. Navigate to the project directory:
-   cd portfolio-website
+   `cd portfolio-website`
 
 3. Install dependencies:
-   npm install
+   `npm install`
 
 4. Build and run the project:
-   npm run dev
+   `npm run dev`
