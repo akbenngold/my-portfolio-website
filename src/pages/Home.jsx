@@ -30,7 +30,7 @@ function Home(props) {
         </section>
         <section className="home__projects">
           <ProjectCard
-            image="../../src/assets/projectcard.svg"
+            image="my-portfolio-website/src/assets/projectcard.svg"
             nameOfProject="project name"
             technologies="tech used"
           />

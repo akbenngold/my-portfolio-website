@@ -5,12 +5,12 @@ function Header() {
     <div className="header">
       <img
         className="header__logo"
-        src="../../src/assets/ojima-high-resolution-logo-white-transparent.png"
+        src="my-portfolio-website/src/assets/ojima-high-resolution-logo-white-transparent.png"
         alt="logo"
       />
       <img
         className="header__hamburger"
-        src="../../src/assets/hamburger.svg"
+        src="my-portfolio-website/src/assets/hamburger.svg"
         alt="hamburger icon"
       />
     </div>
