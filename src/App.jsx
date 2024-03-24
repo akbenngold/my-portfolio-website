@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NavMenu from "./components/NavMenu";
 
 function App() {
   // route
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      {/* <NavMenu /> */}
       <Header />
       {route}
       <Footer />
