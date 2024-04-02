@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import NavMenu from "./NavMenu";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsOpen(() => !isOpen);
+    console.log(isOpen);
+  }
+
   return (
     <div className="header">
       <img
-        className="header__logo"
-        src="public/ojima-high-resolution-logo-white-transparent.png"
-        alt="logo"
-      />
-      <img
+        onClick={toggleMenu}
         className="header__hamburger"
         src="public/hamburger.svg"
         alt="hamburger icon"
       />
+      {isOpen && <NavMenu toggleMenu={toggleMenu} />}
     </div>
   );
 }

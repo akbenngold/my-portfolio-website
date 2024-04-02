@@ -8,7 +8,7 @@ import Button from "../components/Button";
 function Home(props) {
   return (
     <>
-      <Hero title="YOUR NAME" subtitle="FRONTEND DEVELOPER" />
+      <Hero greeting="Hi👋, I'm" title="OJIMA" subtitle="FRONTEND DEVELOPER" />
 
       <main className="main home">
         <section className="home__about">

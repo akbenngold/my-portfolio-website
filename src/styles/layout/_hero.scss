@@ -9,6 +9,9 @@
   height: 100vh;
   padding: 0 3rem;
 
+  &__greeting {
+    font-family: monospace, sans-serif;
+  }
   &__title {
     font-family: "League Gothic", sans-serif;
     font-size: 11rem;

@@ -1,5 +1,5 @@
 .navmenu {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.946);
   color: black;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,11 @@
   gap: 4rem;
   height: 100vh;
   padding: 0 4rem;
-  position: relative;
+  position: fixed;
+  right: 0;
+  top: 0;
+  animation: 0.3s;
+  z-index: 1000;
 
   &__options {
     position: relative;
@@ -36,6 +40,10 @@
 
     li {
       cursor: pointer;
+      &:hover {
+        scale: 1.05;
+        transition: 0.3s;
+      }
     }
 
     a,

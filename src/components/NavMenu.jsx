@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-function NavMenu() {
+function NavMenu({ toggleMenu }) {
   return (
     <div className="navmenu">
       <div className="navmenu__xicon">
         <svg
+          onClick={toggleMenu}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -24,21 +25,29 @@ function NavMenu() {
         <div className="navmenu__label">Menu</div>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={toggleMenu}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/projects" onClick={toggleMenu}>
+              Projects
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about" onClick={toggleMenu}>
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" onClick={toggleMenu}>
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
       <div className="navmenu__links">
-        <a href="mailto:akbenngold@gmail.com">
+        <a href="mailto:akbenngold@gmail.com" onClick={toggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
