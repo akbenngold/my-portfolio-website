@@ -1,0 +1,20 @@
+.about {
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  .background {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    p {
+      display: flex;
+      flex-direction: column;
+
+      q {
+        font-family: monospace;
+        margin: 2rem;
+        background-color: rgb(238, 237, 237);
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@ import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
 
+import image from "../assets/projectcard.svg";
+
 // eslint-disable-next-line no-unused-vars
 function Home(props) {
   return (
@@ -14,14 +16,25 @@ function Home(props) {
         <section className="home__about">
           <h2 className="home__subtitle">About me</h2>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum.
+            <span>
+              I'm a passionate frontend developer with experience crafting
+              user-centric web applications. Proficient in HTML, CSS,
+              JavaScript. I specialize in creating responsive, intuitive
+              interfaces that enhance user experience.
+            </span>{" "}
+            <span>
+              My expertise extends to modern frameworks and libraries such as
+              React, Redux, Vue, Tailwind, Sass where I've led successful
+              projects from concept to deployment. I have a keen eye for design
+              and a commitment to clean, maintainable code.
+            </span>{" "}
+            <span>
+              {" "}
+              My experience in technical writing enables me to write clear and
+              comprehensive documentation. I thrive in collaborative
+              environments where innovation and creativity drive results. Let's
+              build something remarkable together.
+            </span>
           </p>
         </section>
 
@@ -30,7 +43,7 @@ function Home(props) {
         </section>
         <section className="home__projects">
           <ProjectCard
-            image="my-portfolio-website/src/assets/projectcard.svg"
+            image={image}
             nameOfProject="project name"
             technologies="tech used"
           />

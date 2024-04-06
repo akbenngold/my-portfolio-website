@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavMenu from "./NavMenu";
-
+import { FaAlignJustify } from "react-icons/fa6";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,12 +11,13 @@ function Header() {
 
   return (
     <div className="header">
-      <img
-        onClick={toggleMenu}
+      <FaAlignJustify
         className="header__hamburger"
-        src="public/hamburger.svg"
-        alt="hamburger icon"
+        onClick={toggleMenu}
+        color="white"
+        size="4rem"
       />
+
       {isOpen && <NavMenu toggleMenu={toggleMenu} />}
     </div>
   );

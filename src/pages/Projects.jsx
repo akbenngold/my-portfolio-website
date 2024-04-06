@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
+import image from "../assets/projectcard.svg";
 
 function Projects() {
   return (
@@ -9,27 +10,27 @@ function Projects() {
       <Hero title="MY PROJECTS" subtitle="MADE WITH LOVE" />
       <div className="main projects">
         <ProjectCard
-          image="src/assets/projectcard.svg"
+          image={image}
           nameOfProject="project name"
           technologies="tech used"
         />
         <ProjectCard
-          image="src/assets/projectcard.svg"
+          image={image}
           nameOfProject="project name"
           technologies="tech used"
         />
         <ProjectCard
-          image="src/assets/projectcard.svg"
+          image={image}
           nameOfProject="project name"
           technologies="tech used"
         />
         <ProjectCard
-          image="src/assets/projectcard.svg"
+          image={image}
           nameOfProject="project name"
           technologies="tech used"
         />
         <ProjectCard
-          image="src/assets/projectcard.svg"
+          image={image}
           nameOfProject="project name"
           technologies="tech used"
         />
