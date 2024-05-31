@@ -8,7 +8,7 @@ function Hero() {
       <div className="hero-content flex-col lg:flex-row-reverse gap-8 justify-center">
         <img
           src={ojima}
-          className="max-w-sm bg-yellow rounded-full shadow-2xl"
+          className="max-w-xs md:max-w-sm bg-yellow rounded-full shadow-2xl"
         />
         <div>
           <h1 className="text-5xl uppercase">
