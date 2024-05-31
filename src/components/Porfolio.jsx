@@ -11,7 +11,7 @@ const categories = [
 
 const projects = [
   {
-    title: "Web Development",
+    title: "Foodie",
     icon: <CiGlobe size="4rem" />,
     desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
   },

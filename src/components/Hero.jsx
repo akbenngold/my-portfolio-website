@@ -5,12 +5,12 @@ import { TiDocumentText, TiMessages } from "react-icons/ti";
 function Hero() {
   return (
     <div className="hero min-h-screen bg-inherit py-16 section-container">
-      <div className="hero-content flex-col lg:flex-row-reverse gap-8 justify-center items-center">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-8 justify-center">
         <img
           src={ojima}
           className="max-w-sm bg-yellow rounded-full shadow-2xl"
         />
-        <div className="text-center lg:text-left">
+        <div>
           <h1 className="text-5xl uppercase">
             HEY, I'M OJIMA <br />A CREATIVE WEB{" "}
             <span className="brush-underline">DEVELOPER</span>
