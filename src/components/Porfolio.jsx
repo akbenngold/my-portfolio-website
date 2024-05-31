@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import { CiGlobe, CiMobile3 } from "react-icons/ci";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import Button from "./Button";
 
 const categories = [
   { title: "Web Development", icon: <CiGlobe /> },
@@ -14,27 +15,35 @@ const projects = [
     title: "Foodie",
     icon: <CiGlobe size="4rem" />,
     desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+    sourcecode: "github.com",
+    livesite: "akbenngold.github.com",
   },
   {
     title: "Web Development",
     icon: <CiGlobe size="4rem" />,
     desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+    sourcecode: "github.com",
+    livesite: "akbenngold.github.com",
   },
   {
     title: "Web Development",
     icon: <CiGlobe size="4rem" />,
     desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+    sourcecode: "github.com",
+    livesite: "akbenngold.github.com",
   },
   {
     title: "Web Development",
     icon: <CiGlobe size="4rem" />,
     desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+    sourcecode: "github.com",
+    livesite: "https://akbenngold.github.com",
   },
 ];
 
 function Porfolio() {
   return (
-    <div className="section-container py-16 px-16" id="portfolio">
+    <div className="section-container py-20 px-16" id="portfolio">
       <SectionTitle
         title="Projects"
         subtitle="Open cards to see details about each project."
@@ -47,6 +56,14 @@ function Porfolio() {
               {project.icon}
               <h2 className="text-xl font-medium">{project.title}</h2>
               <p>{project.desc}</p>
+              <div className="flex gap-8">
+                <button className="btn border-2 border-black bg-none rounded-full">
+                  <a href={project.sourcecode}>Source Code</a>{" "}
+                </button>
+                <Button>
+                  <a href={project.livesite}>Live Site</a>
+                </Button>
+              </div>
             </li>
           );
         })}

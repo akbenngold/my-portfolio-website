@@ -11,9 +11,13 @@ function Hero() {
           className="max-w-xs md:max-w-sm bg-yellow rounded-full shadow-2xl"
         />
         <div>
-          <h1 className="text-3xl md:text-5xl uppercase text-center md:text-start dark:text-red-600">
-            HEY, I'M <span className="brush-underline">OJIMA</span> <br />A
-            CREATIVE WEB DEVELOPER
+          <h1 className="text-2xl md:text-3xl  text-center md:text-start dark:text-red-600">
+            Hey, I'm{" "}
+            <span className="brush-underline font-semibold text-3xl md:text-5xl">
+              OJIMA,
+            </span>{" "}
+            <br />
+            <span className="">A creative Web Developer</span>
           </h1>
           <ul className="py-6 text-sm md:text-base flex gap-6 star-list justify-center md:justify-start">
             <li>Frontend</li>

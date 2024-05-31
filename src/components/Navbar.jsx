@@ -15,6 +15,9 @@ function Navbar() {
         <a href="#portfolio">Portfolio</a>
       </li>{" "}
       <li>
+        <a href="#about-me">About me</a>
+      </li>
+      <li>
         <a href="#contact-me">Contact me</a>
       </li>
       <li>
@@ -25,7 +28,7 @@ function Navbar() {
   return (
     <div className="navbar bg-base-100 relative section-container bg-inherit section-container">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-4xl">OJ.</a>
+        <a className="btn btn-ghost text-4xl">OJ_</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems} </ul>

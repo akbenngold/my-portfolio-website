@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Portfolio from "./components/Porfolio";
 import ContactMe from "./components/ContactMe";
 import ProgressBar from "./components/ProgressBar";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -16,10 +17,14 @@ function App() {
       <ProgressBar />
 
       <Hero />
-      <Skills />
 
+      <Skills />
       <Services />
+      <hr />
       <Portfolio />
+      <hr />
+      <AboutMe />
+      <hr />
       <ContactMe />
       <Footer />
     </div>

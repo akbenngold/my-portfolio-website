@@ -17,7 +17,7 @@ const services = [
 ];
 function Services() {
   return (
-    <div className="section-container py-16 flex flex-col items-center gap-8">
+    <div className="section-container py-20 flex flex-col items-center gap-8">
       <SectionTitle title="Services" subtitle="Services I am providing you." />
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {services.map((service) => {
@@ -28,9 +28,6 @@ function Services() {
           );
         })}
       </ul>{" "}
-      <Button className="text-xs" size="small">
-        View All
-      </Button>
     </div>
   );
 }
