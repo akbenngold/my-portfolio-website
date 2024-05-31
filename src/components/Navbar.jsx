@@ -6,16 +6,19 @@ function Navbar() {
     <>
       {" "}
       <li>
-        <a href="">Home</a>
+        <a href="#">Home</a>
       </li>
       <li>
-        <a>Services</a>
+        <a href="#services">Services</a>
       </li>
       <li>
-        <a href="">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
+      </li>{" "}
+      <li>
+        <a href="#contact-me">Contact me</a>
       </li>
       <li>
-        <a>Testimonials</a>
+        <a href="#testimonials">Testimonials</a>
       </li>
     </>
   );
@@ -28,7 +31,7 @@ function Navbar() {
         <ul className="menu menu-horizontal px-1">{navItems} </ul>
       </div>
       <div className="navbar-end">
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end absolute">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"

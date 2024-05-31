@@ -34,7 +34,7 @@ const projects = [
 
 function Porfolio() {
   return (
-    <div className="section-container py-16 px-16">
+    <div className="section-container py-16 px-16" id="portfolio">
       <SectionTitle
         title="Projects"
         subtitle="Open cards to see details about each project."
