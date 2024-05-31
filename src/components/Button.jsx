@@ -2,10 +2,13 @@ import React from "react";
 
 function Button(props) {
   return (
-    <button>
-      <span className="button__label">{props.label}</span>
-      <span className="button__arrow">{props.arrow}</span>
-    </button>
+    <a
+      className={`btn bg-yellow w-${
+        props.size ? 16 : 32
+      } rounded-full font-semibold border-none`}
+    >
+      {props.children}
+    </a>
   );
 }
 

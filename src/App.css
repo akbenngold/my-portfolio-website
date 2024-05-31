@@ -1,0 +1,58 @@
+.section-container {
+  @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
+}
+
+.brush-underline {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  z-index: 1;
+}
+.brush-underline::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.7),rgba(255, 165, 0, 0.7),rgba(255, 255, 0, 0.7) );
+  z-index: -1;
+  transform: rotate(-2deg);
+  opacity: 0.8;
+}
+.star-list li {
+  position: relative; /* Positioning context for the pseudo-element */
+  padding-left: 20px; /* Space for the star */
+}
+
+.star-list li::before {
+  content: '★'; /* Star character */
+  color: gold; /* Star color */
+  position: absolute; /* Position it relative to the list item */
+  left: 0; /* Align it to the left edge of the list item */
+  top: 0;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+/* src/Carousel.css */
+.carousel-container {
+  width: 100%; /* Full width of the page */
+  overflow: hidden; /* Hide overflow to create the scrolling effect */
+}
+
+.carousel {
+  display: flex;
+  width: calc(200px * 10 * 2); /* Width for 8 items to allow seamless scrolling */
+  animation: scroll 60s linear infinite;
+
+}
+
+

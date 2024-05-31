@@ -1,30 +1,21 @@
-// import "./styles/main.scss";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-
-import Header from "./components/Header";
+import React from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Services from "./components/Services";
 import Footer from "./components/Footer";
-
+import Portfolio from "./components/Porfolio";
 function App() {
-  // route
-  const route = (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-  );
-
   return (
-    <>
-      <Header />
-      {route}
+    <div className=" bg-[#f0f0ed] overflow-hidden">
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Services />
+      <Portfolio />
       <Footer />
-    </>
+    </div>
   );
 }
 
