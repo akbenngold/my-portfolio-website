@@ -73,3 +73,9 @@ html{
   cursor: pointer;
   user-select: none; /* Prevent text selection */
 }
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
