@@ -4,7 +4,7 @@ import ojima from "../assets/ojima.png";
 import { TiDocumentText, TiMessages } from "react-icons/ti";
 function Hero() {
   return (
-    <div className="hero min-h-screen  bg-inherit pb-16 pt-8 section-container">
+    <div className="hero min-h-screen md:min-h-[60vh]  bg-inherit pb-16 pt-8 section-container">
       <div className="hero-content flex-col md:flex-row-reverse gap-8 justify-center">
         <img
           src={ojima}

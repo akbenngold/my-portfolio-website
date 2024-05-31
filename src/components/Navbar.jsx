@@ -20,7 +20,7 @@ function Navbar() {
     </>
   );
   return (
-    <div className="navbar bg-base-100 section-container bg-inherit section-container">
+    <div className="navbar bg-base-100  section-container bg-inherit section-container">
       <div className="navbar-start">
         <a className="btn btn-ghost text-4xl">OJ.</a>
       </div>
@@ -28,7 +28,7 @@ function Navbar() {
         <ul className="menu menu-horizontal px-1">{navItems} </ul>
       </div>
       <div className="navbar-end">
-        <div className="dropdown">
+        <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navItems}
           </ul>
