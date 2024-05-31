@@ -4,10 +4,10 @@ import { FaGithub, FaHashnode, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-neutral-800 text-neutral-content flex justify-between gap-12 section-container">
-      <aside className="text-7xl">OJ.</aside>
+    <footer className="footer p-10 bg-neutral-800 text-neutral-content flex justify-between items-center gap-12 section-container">
+      <aside className="text-4xl md:text-7xl">OJ.</aside>
       <nav className="flex flex-col gap-4 items-center">
-        <h6 className="footer-title">Social</h6>
+        <h6 className="footer-title">Socials</h6>
         <div className="flex gap-4">
           <a href="https://x.com/akbenngold" target="_blank">
             <FaXTwitter size="1.5rem" />
