@@ -28,7 +28,6 @@ function ProgressBar() {
         className="h-full bg-yellow"
         style={{ width: `${scrollPercent}%` }}
       ></div>
-      {console.log(scrollPercent)}
     </div>
   );
 }
