@@ -12,8 +12,8 @@ function Hero() {
         />
         <div>
           <h1 className="text-3xl md:text-5xl uppercase text-center md:text-start dark:text-red-600">
-            HEY, I'M OJIMA <br />A CREATIVE WEB{" "}
-            <span className="brush-underline">DEVELOPER</span>
+            HEY, I'M <span className="brush-underline">OJIMA</span> <br />A
+            CREATIVE WEB DEVELOPER
           </h1>
           <ul className="py-6 text-sm md:text-base flex gap-6 star-list justify-center md:justify-start">
             <li>Frontend</li>
