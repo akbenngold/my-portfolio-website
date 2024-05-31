@@ -22,7 +22,7 @@
 }
 .star-list li {
   position: relative; /* Positioning context for the pseudo-element */
-  padding-left: 20px; /* Space for the star */
+  padding-left: 15px; /* Space for the star */
 }
 
 .star-list li::before {
