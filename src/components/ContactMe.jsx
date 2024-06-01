@@ -1,24 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { useForm } from "react-hook-form";
-import {
-  FaGithub,
-  FaHashnode,
-  FaInstagram,
-  FaLinkedin,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaGithub, FaHashnode, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { AiOutlineMail } from "react-icons/ai";
+import db from "../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
+import Button from "./Button";
+
 function ContactMe() {
+  const [resp, setResp] = useState("");
+  const [loading, setLoading] = useState(false);
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  // Function to show modal
+  const showModal = () => {
+    document.getElementById("my_modal_5").showModal();
+  };
+  const closeModal = () => {
+    document.getElementById("my_modal_5").close();
+  };
+
+  const onSubmit = (data) => {
+    setLoading(true);
+    addDoc(collection(db, "contacts"), data)
+      .then(() => {
+        setResp("Message sent successfully!");
+        setLoading(false);
+        showModal();
+        reset();
+        // Clear the response message after 3 seconds
+        setTimeout(() => {
+          setResp("");
+          closeModal();
+        }, 3000);
+      })
+      .catch(() => {
+        setResp("Message sending error!");
+        setLoading(false);
+        // Show modal
+        showModal();
+        // Clear the response message after 3 seconds
+        setTimeout(() => {
+          setResp("");
+          closeModal();
+        }, 3000);
+      });
+  };
 
   return (
-    <div id="contact-me" className="section-container py-20">
+    <div id="contact-me" className="section-container pt-20">
       <SectionTitle
         title="Contact me"
         subtitle="Feel free to drop a message. I'll reply you as soon as I can"
@@ -26,23 +61,23 @@ function ContactMe() {
       <div className="flex flex-col-reverse md:flex-row py-10 gap-10">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col px-10 gap-8 py-10 md:w-1/2"
+          className="flex flex-col px-10 gap-8 py-10 md:w-1/2 relative"
         >
           <div>
             <input
               className="bg-inherit border-b-[1px] w-[100%] border-black px-2 py-1"
               placeholder="Name"
               {...register("name")}
-            />{" "}
+            />
           </div>
           <div className="relative">
             <input
               className="bg-inherit border-b-[1px] w-[100%] border-black px-2 py-1"
               placeholder="E-mail*"
               {...register("email", { required: true })}
-            />{" "}
+            />
             {errors.email && (
-              <span className="absolute text-red-600 left-40 top-1">
+              <span className="absolute italic text-xs text-red-600 left-40 top-1">
                 This field is required
               </span>
             )}
@@ -52,17 +87,24 @@ function ContactMe() {
               className="bg-inherit border-b-[1px] w-[100%] border-black px-2 py-1"
               placeholder="Message*"
               {...register("message", { required: true })}
-            />{" "}
+            />
             {errors.message && (
-              <span className="absolute text-red-600 left-40 top-1">
+              <span className="absolute italic text-xs text-red-600 left-40 top-1">
                 This field is required
               </span>
             )}
           </div>
-          <input
-            type="submit"
-            className="bg-yellow font-semibold cursor-pointer h-10 rounded-md hover:bg-neutral-500 hover:text-white"
-          />
+          {loading ? (
+            <Button>
+              <span className="loading loading-spinner loading-md"></span>
+            </Button>
+          ) : (
+            <input
+              type="Submit"
+              className="bg-yellow font-semibold cursor-pointer h-10 rounded-md hover:bg-neutral-500 hover:text-white"
+            />
+          )}
+          {/* Display resp message */}
         </form>
         <div className="md:w-1/2 bg-neutral-700 relative text-neutral-300 mx-10 md:mx-auto p-10 ">
           <div className="bg-yellow h-8 w-8 absolute top-[-0.75rem] left-[-0.75rem]"></div>
@@ -108,6 +150,21 @@ function ContactMe() {
           </div>
         </div>
       </div>
+      {/* Modal */}
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg">Error!</h3>
+          <p className="py-4">{resp}</p>
+          <div className="modal-action">
+            <button
+              className="btn"
+              onClick={() => document.getElementById("my_modal_5").close()}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 }
