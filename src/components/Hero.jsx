@@ -30,7 +30,8 @@ function Hero() {
               <TiDocumentText /> Resume
             </button>
             <Button>
-              <TiMessages /> Let's Talk
+              <TiMessages />
+              <a href="#contact-me"> Let's Talk</a>
             </Button>
           </div>
         </div>

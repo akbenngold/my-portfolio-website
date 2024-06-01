@@ -23,7 +23,7 @@ function ProgressBar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[4px] bg-gray-200">
+    <div className="fixed top-0 left-0 z-50 w-full h-[4px] bg-gray-200">
       <div
         className="h-full bg-yellow"
         style={{ width: `${scrollPercent}%` }}
