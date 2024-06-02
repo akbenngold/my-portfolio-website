@@ -11,7 +11,7 @@ function Hero() {
           className="max-w-xs md:max-w-sm bg-yellow rounded-full shadow-2xl"
         />
         <div>
-          <h1 className="text-2xl md:text-3xl  text-center md:text-start dark:text-red-600">
+          <h1 className="text-2xl md:text-3xl  text-center md:text-start ">
             Hey, I'm{" "}
             <span className="brush-underline font-semibold text-3xl md:text-5xl">
               OJIMA,
