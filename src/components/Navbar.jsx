@@ -55,7 +55,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm menuItems dropdown-content mt-3 z-[1] p-2 shadow bg-neutral-300 rounded-box w-52"
+            className="menu menu-sm menuItems dropdown-content mt-3 z-[1] p-2 shadow bg-[#fff] rounded-box w-52"
           >
             {navItems}
           </ul>
