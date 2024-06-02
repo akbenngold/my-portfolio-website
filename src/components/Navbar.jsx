@@ -30,7 +30,7 @@ function Navbar() {
       <div className="navbar-start">
         <a className="btn btn-ghost text-4xl">OJ_</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">{navItems} </ul>
       </div>
       <div className="navbar-end">
