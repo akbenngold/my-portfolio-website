@@ -7,7 +7,7 @@ export default {
 
   theme: {
     extend: {colors: {
-      'yellow': '#d9b730',}},
+      'yellow': '#fcfc51',}},
   },
   plugins: [require('daisyui'),], 
   daisyui:{
