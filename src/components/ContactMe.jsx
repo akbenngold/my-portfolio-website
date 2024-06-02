@@ -152,10 +152,11 @@ function ContactMe() {
         </div>
       </div>
       {/* Modal */}
-      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle bg-neutral-300">
         <div className="modal-box">
           <h3 className="font-bold text-lg">
-            {resp === "Message sent successfully!" ? "Success!" : "Error!"}
+            {(resp === "Message sent successfully!") && "Success!"}
+            {(resp === "Message sending error!") && "Error!"}
           </h3>
           <p className="py-4">{resp}</p>
           <div className="modal-action">
