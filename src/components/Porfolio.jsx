@@ -12,32 +12,31 @@ const categories = [
 
 const projects = [
   {
-    title: "Foodie",
+    title: "Foodi",
     icon: <CiGlobe size="4rem" />,
-    desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+    desc: "A restaurant webapp where users can login and order food online. Also has an admin panel. Built with MERN stack and Firebase",
     sourcecode: "github.com",
     livesite: "akbenngold.github.com",
   },
+  // {
+  //   title: "Web Development",
+  //   icon: <CiGlobe size="4rem" />,
+  //   desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+  //   sourcecode: "github.com",
+  //   livesite: "akbenngold.github.com",
+  // },
+  // {
+  //   title: "Web Development",
+  //   icon: <CiGlobe size="4rem" />,
+  //   desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
+  //   sourcecode: "github.com",
+  //   livesite: "akbenngold.github.com",
+  // },
   {
-    title: "Web Development",
-    icon: <CiGlobe size="4rem" />,
-    desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
-    sourcecode: "github.com",
-    livesite: "akbenngold.github.com",
-  },
-  {
-    title: "Web Development",
-    icon: <CiGlobe size="4rem" />,
-    desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
-    sourcecode: "github.com",
-    livesite: "akbenngold.github.com",
-  },
-  {
-    title: "Web Development",
-    icon: <CiGlobe size="4rem" />,
-    desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
-    sourcecode: "github.com",
-    livesite: "https://akbenngold.github.com",
+    title: "Articles on Hashnode",
+    icon: <IoDocumentTextOutline size="4rem" />,
+    desc: "Check out my techincal articles on hashnode. I write about React, TypeScript, How-To's, Responsive design and best practices",
+    livesite: "https://hashnode.com/@akbenngold",
   },
 ];
 
@@ -57,11 +56,20 @@ function Porfolio() {
               <h2 className="text-xl font-medium">{project.title}</h2>
               <p>{project.desc}</p>
               <div className="flex gap-8">
-                <button className="btn border-2 border-black bg-none rounded-full">
+                <button
+                  className={`btn border-2 border-black bg-none rounded-full ${
+                    project.livesite === "https://hashnode.com/@akbenngold" &&
+                    "hidden"
+                  }`}
+                >
                   <a href={project.sourcecode}>Source Code</a>{" "}
                 </button>
                 <Button>
-                  <a href={project.livesite}>Live Site</a>
+                  <a href={project.livesite}>
+                    {project.livesite === "https://hashnode.com/@akbenngold"
+                      ? "Open"
+                      : "Live Site"}
+                  </a>
                 </Button>
               </div>
             </li>

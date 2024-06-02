@@ -1,15 +1,22 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-import { MdOutlineScreenshotMonitor, MdSpeed } from "react-icons/md";
+import {
+  MdOutlineLock,
+  MdOutlineScreenshotMonitor,
+  MdSpeed,
+} from "react-icons/md";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaCode } from "react-icons/fa6";
 import { GrConnect } from "react-icons/gr";
 import { GoBug } from "react-icons/go";
-import Button from "./Button";
+import { CiDatabase } from "react-icons/ci";
 
 const services = [
   { title: "Responsive Design", icon: <MdOutlineScreenshotMonitor /> },
   { title: "Performance Optimization", icon: <MdSpeed /> },
+  { title: "Authentication and Authorization", icon: <MdOutlineLock /> },
+  { title: "Database Management", icon: <CiDatabase /> },
+
   { title: "Testing and Debugging", icon: <GoBug /> },
   { title: "User Documentation", icon: <IoDocumentTextOutline /> },
   { title: "Developer Documentation", icon: <FaCode /> },

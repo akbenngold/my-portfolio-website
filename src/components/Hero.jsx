@@ -21,6 +21,7 @@ function Hero() {
           </h1>
           <ul className="py-6 text-sm md:text-base flex gap-6 star-list justify-center md:justify-start">
             <li>Frontend</li>
+            <li>Firebase</li>
             <li>Technical Writing</li>
             <li>UI Design</li>
           </ul>

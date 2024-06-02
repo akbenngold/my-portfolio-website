@@ -33,6 +33,7 @@ const Skills = () => {
       >
         <li>JavaScript</li>
         <li>TypeScript</li>
+        <li>Firebase</li>
         <li>CSS</li>
         <li>Sass</li>
         <li>Tailwind</li>
