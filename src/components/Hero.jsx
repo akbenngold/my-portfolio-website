@@ -8,18 +8,23 @@ function Hero() {
       <div className="hero-content flex-col md:flex-row-reverse gap-8 justify-center">
         <img
           src={ojima}
-          className="max-w-xs md:max-w-sm bg-yellow rounded-full shadow-2xl"
+          className="max-w-[15rem] md:max-w-sm bg-yellow rounded-full shadow-2xl"
         />
         <div>
-          <h1 className="text-2xl md:text-3xl  text-center md:text-start ">
+          <h1 className="text-3xl md:text-4xl  text-center md:text-start ">
             Hey, I'm{" "}
             <span className="brush-underline font-semibold text-3xl md:text-5xl">
-              OJIMA,
-            </span>{" "}
-            <br />
-            <span className="">a creative Frontend Developer</span>
+              OJIMA
+            </span>
+            , <br />
+            <span className="block mt-4">
+              a creative{" "}
+              <span className="text-neutral-700 font-semibold">
+                Frontend Developer
+              </span>
+            </span>
           </h1>
-          <ul className="py-6 text-sm md:text-base flex gap-6 star-list justify-center md:justify-start">
+          <ul className="py-6 text-xs min-[400px]:text-sm md:text-base flex gap-6 star-list justify-center md:justify-start">
             <li>Frontend</li>
             <li>Technical Writing</li>
             <li>UI Design</li>

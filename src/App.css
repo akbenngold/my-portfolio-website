@@ -64,6 +64,12 @@ body{
 
 }
 
+.carousel li{
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
 .menuItems {
   display: flex;
   flex-direction: column;

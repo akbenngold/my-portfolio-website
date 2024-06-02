@@ -51,11 +51,11 @@ function Porfolio() {
       <ul className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => {
           return (
-            <li className="rounded-md border-2 border-black p-6 flex flex-col gap-7 max-w-[100%]">
+            <li className="rounded-md border-2 border-black p-4 flex flex-col gap-4 max-w-[100%]">
               {project.icon}
               <h2 className="text-xl font-medium">{project.title}</h2>
               <p>{project.desc}</p>
-              <div className="flex gap-2">
+              <div className="flex flex-col gap-2">
                 <button
                   className={`btn border-2 border-black bg-none rounded-full text-xs ${
                     project.livesite === "https://hashnode.com/@akbenngold" &&

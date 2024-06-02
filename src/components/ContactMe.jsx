@@ -107,15 +107,15 @@ function ContactMe() {
           )}
           {/* Display resp message */}
         </form>
-        <div className="md:w-1/2 bg-neutral-700 relative text-neutral-300 mx-10 md:mx-auto p-10 ">
+        <div className="md:w-1/2 bg-neutral-700 relative flex justify-center text-neutral-300 mx-10 md:mx-auto p-6 min-[400px]:p-10">
           <div className="bg-yellow h-8 w-8 absolute top-[-0.75rem] left-[-0.75rem]"></div>
-          <div className="flex flex-col gap-6 text-sm ">
+          <div className="flex flex-col gap-6 text-[0.5rem] min-[400px]:text-xs">
             <a
               href="https://x.com/akbenngold"
               target="_blank"
               className="flex gap-4 items-center"
             >
-              <FaXTwitter size="1rem" /> @akbenngold
+              <FaXTwitter size="1rem" /> x.com/akbenngold
             </a>
             <a
               className="flex gap-4 items-center"
@@ -155,8 +155,8 @@ function ContactMe() {
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle ">
         <div className="modal-box bg-neutral-300">
           <h3 className="font-bold text-lg">
-            {(resp === "Message sent successfully!") && "Success!"}
-            {(resp === "Message sending error!") && "Error!"}
+            {resp === "Message sent successfully!" && "Success!"}
+            {resp === "Message sending error!" && "Error!"}
           </h3>
           <p className="py-4">{resp}</p>
           <div className="modal-action">

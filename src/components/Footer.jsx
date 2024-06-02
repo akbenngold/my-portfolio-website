@@ -8,7 +8,7 @@ function Footer() {
       <div className="flex justify-between items-center w-[100%]">
         <aside className="text-4xl md:text-7xl">OJ_</aside>
         <nav className="flex flex-col gap-4 items-center">
-          <h6 className="footer-title">Socials</h6>
+          {/* <h6 className="footer-title">Socials</h6> */}
           <div className="flex gap-4">
             <a href="https://x.com/akbenngold" target="_blank">
               <FaXTwitter size="1.5rem" />
