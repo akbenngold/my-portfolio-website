@@ -28,7 +28,7 @@ const Skills = () => {
   return (
     <div className="carousel-container" id="services">
       <ul
-        className="carousel py-6 flex gap-24 star-list text-neutral-content bg-neutral-800"
+        className="carousel py-6 flex gap-24 star-list text-neutral-100 bg-neutral-800"
         ref={carouselRef}
       >
         <li>JavaScript</li>
