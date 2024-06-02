@@ -4,7 +4,7 @@ import { FaGithub, FaHashnode, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-neutral-800 text-neutral-100 flex flex-col  gap-12 section-container items-center">
+    <footer className="footer p-10 bg-neutral-800 text-neutral-300 flex flex-col  gap-12 section-container items-center">
       <div className="flex justify-between items-center w-[100%]">
         <aside className="text-4xl md:text-7xl">OJ_</aside>
         <nav className="flex flex-col gap-4 items-center">
