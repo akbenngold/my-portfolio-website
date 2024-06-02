@@ -72,6 +72,7 @@ function ContactMe() {
           </div>
           <div className="relative">
             <input
+              type="email"
               className="bg-inherit border-b-[1px] w-[100%] border-black px-2 py-1"
               placeholder="E-mail*"
               {...register("email", { required: true })}
