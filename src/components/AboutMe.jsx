@@ -15,7 +15,7 @@ function AboutMe() {
         </p>
         <p>
           My approach to web development is centered around creating intuitive
-          and user-friendly, and I'm always looking for ways to improve my
+          and user-friendly interfaces; I'm always looking for ways to improve my
           skills and share knowledge with others.
         </p>
         <p>
