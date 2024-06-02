@@ -153,7 +153,7 @@ function ContactMe() {
       </div>
       {/* Modal */}
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle ">
-        <div className="modal-box bg-neutral-300">
+        <div className="modal-box bg-[#fff]">
           <h3 className="font-bold text-lg">
             {resp === "Message sent successfully!" && "Success!"}
             {resp === "Message sending error!" && "Error!"}
