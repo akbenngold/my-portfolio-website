@@ -102,7 +102,7 @@ function ContactMe() {
           ) : (
             <input
               type="Submit"
-              className="bg-yellow font-semibold cursor-pointer h-10 rounded-md hover:bg-neutral-500 hover:text-white"
+              className="bg-yellow font-semibold cursor-pointer h-10 rounded-full hover:bg-neutral-500 hover:text-white"
             />
           )}
           {/* Display resp message */}
