@@ -16,7 +16,7 @@ function Hero() {
             <span className="brush-underline font-semibold text-3xl md:text-5xl">
               OJIMA
             </span>
-            , <br />
+             <br />
             <span className="block mt-4">
               a creative{" "}
               <span className="text-neutral-700 font-semibold">
