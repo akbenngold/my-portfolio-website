@@ -153,7 +153,9 @@ function ContactMe() {
       {/* Modal */}
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Error!</h3>
+          <h3 className="font-bold text-lg">
+            {resp === "Message sent successfully!" ? "Success!" : "Error!"}
+          </h3>
           <p className="py-4">{resp}</p>
           <div className="modal-action">
             <button
