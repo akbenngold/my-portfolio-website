@@ -55,9 +55,9 @@ function Porfolio() {
               {project.icon}
               <h2 className="text-xl font-medium">{project.title}</h2>
               <p>{project.desc}</p>
-              <div className="flex gap-8">
+              <div className="flex gap-2">
                 <button
-                  className={`btn border-2 border-black bg-none rounded-full ${
+                  className={`btn border-2 border-black bg-none rounded-full text-xs ${
                     project.livesite === "https://hashnode.com/@akbenngold" &&
                     "hidden"
                   }`}
@@ -65,7 +65,7 @@ function Porfolio() {
                   <a href={project.sourcecode}>Source Code</a>{" "}
                 </button>
                 <Button>
-                  <a href={project.livesite}>
+                  <a className="text-xs" href={project.livesite}>
                     {project.livesite === "https://hashnode.com/@akbenngold"
                       ? "Open"
                       : "Live Site"}
