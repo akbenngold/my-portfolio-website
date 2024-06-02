@@ -9,5 +9,9 @@ export default {
     extend: {colors: {
       'yellow': '#fcfc51',}},
   },
-  plugins: [require('daisyui'),],  darkMode: 'false',
+  plugins: [require('daisyui'),], 
+  daisyui:{
+    themes: [],
+  },
+  darkMode:false
 }
