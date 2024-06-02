@@ -34,7 +34,7 @@ function Navbar() {
         <ul className="menu menu-horizontal px-1">{navItems} </ul>
       </div>
       <div className="navbar-end">
-        <div className="dropdown dropdown-end fixed  top-2 z-10 md:hidden">
+        <div className="dropdown dropdown-end fixed bg-yellow-100  top-2 z-10 md:hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <div className="bg-yellow p-2">
               <svg
