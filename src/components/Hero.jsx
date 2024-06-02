@@ -17,7 +17,7 @@ function Hero() {
               OJIMA,
             </span>{" "}
             <br />
-            <span className="">A creative Frontend Developer</span>
+            <span className="">a creative Frontend Developer</span>
           </h1>
           <ul className="py-6 text-sm md:text-base flex gap-6 star-list justify-center md:justify-start">
             <li>Frontend</li>
