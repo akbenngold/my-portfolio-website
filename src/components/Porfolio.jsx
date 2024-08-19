@@ -23,7 +23,7 @@ const projects = [
   icon: <CiSignpostDuo1 size="4rem" />,
   desc: "Microblogging webapp where users can login, make posts, follow other users, like and comment. Built with React, Firebase, Typescript",
    sourcecode: "github.com",
-     livesite: "https://www.chattershub.netlify.app",
+     livesite: "www.chattershub.netlify.app",
   },
   // {
   //   title: "Web Development",
