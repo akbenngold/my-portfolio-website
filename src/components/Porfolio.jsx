@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-import { CiGlobe, CiMobile3 } from "react-icons/ci";
+import { CiGlobe, CiMobile3, CiSignpostDuo1} from "react-icons/ci";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import Button from "./Button";
 
@@ -18,13 +18,13 @@ const projects = [
     sourcecode: "github.com",
     livesite: "akbenngold.github.com",
   },
-  // {
-  //   title: "Web Development",
-  //   icon: <CiGlobe size="4rem" />,
-  //   desc: "Ecommerce website sh Ecommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website shEcommerce website sh",
-  //   sourcecode: "github.com",
-  //   livesite: "akbenngold.github.com",
-  // },
+  {
+  title: "Chatter",
+  icon: <CiSignpostDuo1 size="4rem" />,
+  desc: "Microblogging webapp where users can login, make posts, follow other users, like and comment. Built with React, Firebase, Typescript",
+   sourcecode: "github.com",
+     livesite: "https://www.chattershub.netlify.app",
+  },
   // {
   //   title: "Web Development",
   //   icon: <CiGlobe size="4rem" />,
