@@ -4,7 +4,7 @@ import ojima from "../assets/ojima.png";
 import { TiDocumentText, TiMessages } from "react-icons/ti";
 function Hero() {
   return (
-    <div className="hero min-h-screen md:min-h-[60vh]  bg-inherit pb-16 pt-8 section-container">
+    <div className="hero min-h-screen md:min-h-[60vh]  bg-inherit pb-16 pt-6 md:pt-8 section-container">
       <div className="hero-content flex-col md:flex-row-reverse gap-8 justify-center">
         <img
           src={ojima}
@@ -12,13 +12,13 @@ function Hero() {
         />
         <div>
           <h1 className="text-3xl md:text-4xl  text-center md:text-start ">
-            Hey, I'm{" "}
+            <span className="curs text-2xl">Hey, I'm </span>
             <span className="brush-underline font-semibold text-3xl md:text-5xl">
               OJIMA
             </span>
             <br />
             <span className="block mt-4">
-              a creative{" "}
+              <span className="curs text-2xl">a creative </span>
               <span className="text-neutral-700 font-semibold">
                 Frontend Developer
               </span>
