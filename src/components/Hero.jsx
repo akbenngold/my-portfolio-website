@@ -31,7 +31,7 @@ function Hero() {
           </ul>
           <div className="flex gap-8 justify-center md:justify-start">
             {" "}
-            <a href="src/assets/resume.docx" download="ojima_resume.docx">
+            <a href="/resume.docx" download="ojima_resume.docx">
               <button className="btn border-2 border-black bg-none rounded-full">
                 {" "}
                 <TiDocumentText /> Download Resume
