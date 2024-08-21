@@ -15,8 +15,8 @@ function App() {
     <div className=" bg-[#f0f0ed] overflow-hidden  relative">
       {/* <Navbar />
       <ProgressBar />
-
-      <Hero />*/}
+*/}
+      <Hero />
       Coming soon... i go soon hot no worry
       {/* <Skills />
       <Services />

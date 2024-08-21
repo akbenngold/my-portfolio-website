@@ -16,7 +16,7 @@ function Hero() {
             <span className="brush-underline font-semibold text-3xl md:text-5xl">
               OJIMA
             </span>
-             <br />
+            <br />
             <span className="block mt-4">
               a creative{" "}
               <span className="text-neutral-700 font-semibold">
@@ -31,9 +31,12 @@ function Hero() {
           </ul>
           <div className="flex gap-8 justify-center md:justify-start">
             {" "}
-            <button className="btn border-2 border-black bg-none rounded-full">
-              <TiDocumentText /> Resume
-            </button>
+            <a href="src/assets/resume.docx" download="ojima_resume.docx">
+              <button className="btn border-2 border-black bg-none rounded-full">
+                {" "}
+                <TiDocumentText /> Download Resume
+              </button>
+            </a>
             <Button>
               <TiMessages />
               <a href="#contact-me"> Let's Talk</a>
