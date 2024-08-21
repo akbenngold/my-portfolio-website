@@ -13,21 +13,20 @@ import AboutMe from "./components/AboutMe";
 function App() {
   return (
     <div className=" bg-[#f0f0ed] overflow-hidden  relative">
-      Coming soon... i go soon hot no worry
-      {/* <Navbar />
+      <Navbar />
       <ProgressBar />
-
       <Hero />
-
       <Skills />
       <Services />
       <hr />
+      Everything else coming soon... i go soon hot no worry!!!!!!
+      {/*
       <Portfolio />
-      <hr />
+      <hr />*/}
       <AboutMe />
       <hr />
       <ContactMe />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
